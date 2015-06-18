@@ -14,11 +14,13 @@
   $orcamento->entrega = $_POST["entrega"];
    
   
-  if($obj_orcamento->save()){
+  if($orcamento->save()){
   	//incluir alerta enviado
+    
+    
   } else{
     //incluir alerta erro e
-    header("Location: ../views/orcamentos-view");
+    header("Location: ../views/orcamentos-view.php");
   }
 
 

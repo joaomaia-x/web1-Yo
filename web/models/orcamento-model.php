@@ -1,6 +1,6 @@
 <?php
 
-public class Orcamento{
+ class Orcamento{
 	
 	var $nomeSol;
 	var $email;
@@ -17,7 +17,7 @@ public class Orcamento{
 	}
 	
 	function save(){
-		
+		return true;
 	}
 }
 

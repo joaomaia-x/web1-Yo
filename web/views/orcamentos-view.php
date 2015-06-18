@@ -22,7 +22,7 @@
 				<tr>
 					<td> Telefone:</td>
 					<td>
-						<input type="number" name="telefone" />
+						<input type="text" name="telefone" />
 					</td>
 				</tr>
 				<tr>
