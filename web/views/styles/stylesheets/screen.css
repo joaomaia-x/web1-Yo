@@ -186,21 +186,33 @@ a:hover {
   padding: 10px;
   font-size: 26px;
 }
-/* line 157, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
+.main-footer #mainFooter #links ul li {
+  padding: 5px;
+}
+/* line 158, ../sass/screen.scss */
+.main-footer #mainFooter #links ul li a {
+  color: white;
+}
+/* line 166, ../sass/screen.scss */
 .main-footer #mainFooter #socialLinks {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
+}
+/* line 170, ../sass/screen.scss */
+.main-footer #mainFooter #socialLinks ul {
+  padding: 10px;
 }
 
 /* --------------- Fim Footer  --------------- */
 /* --------------- Main Contato  --------------- */
-/* line 169, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #mainContato {
   margin: auto;
   max-width: 980px;
   padding: 20px;
 }
-/* line 176, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #mainContato .contato form {
   padding: 10px;
   position: relative;
@@ -208,7 +220,7 @@ a:hover {
   width: 50%;
   display: inline-block;
 }
-/* line 185, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 #mainContato .contato #map-canvas {
   width: 100%;
   max-width: 347px;

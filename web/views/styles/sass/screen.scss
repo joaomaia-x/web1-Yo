@@ -152,11 +152,38 @@ a{
 				font-size: 26px;
 			}
 			
+			ul{
+				li{
+					padding: 5px;
+					a{
+						color: white;
+					}
+				}
+			}
+			
 		}
 		
 		#socialLinks{
 			display: inline-block;
-			vertical-align: top;
+			vertical-align: middle;
+			
+			ul{
+				padding: 10px;
+				li{
+					i{
+						&#facebook{
+							
+						}
+						&#instagram{
+							
+						}
+						&#twitter{
+							
+						}
+						
+					}
+				}
+			}
 		}
 			
 	}

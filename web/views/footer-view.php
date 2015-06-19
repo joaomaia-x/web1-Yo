@@ -12,11 +12,11 @@
 					<li><a href="contato-view.php">Contato</a></li>
 				</ul>
 			</div>
-			<div ids="socialLinks">
+			<div id="socialLinks">
 				<ul>
-					<li>Facebook</li>
-					<li>Twitter</li>
-					<li>Instagram</li>
+					<li><i id="facebook"></i></li>
+					<li><i id="twitter"></i></li>
+					<li><i id="intagram"></i></li>
 				</ul>
 			</div>
 	      </div>
