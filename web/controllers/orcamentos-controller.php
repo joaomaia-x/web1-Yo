@@ -1,6 +1,5 @@
 <?php
-
- require_once "../models/orcamento-model.php";
+  require_once "../models/orcamento-model.php";  
 
   $orcamento = new Orcamento();
   $orcamento->nomeSol = $_POST["nomeSol"];
@@ -14,13 +13,17 @@
   $orcamento->entrega = $_POST["entrega"];
    
   
-  if($orcamento->save()){
+  if($orcamento->save() == true){
   	//incluir alerta enviado
-    
+    header('Content-Type: application/json');
+    echo json_encode(["resultado" => 'ok']);
+    return null;
     
   } else{
     //incluir alerta erro e
-    header("Location: ../views/orcamentos-view.php");
+    header('Content-Type: application/json');
+    echo json_encode(["resultado" => 'erro']);
+    return null;
   }
 
 

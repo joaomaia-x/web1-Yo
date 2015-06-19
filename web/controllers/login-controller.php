@@ -1,14 +1,20 @@
 <?php
+	session_start();
 	
-	require_once "../models/login-model.php";
+	include "../models/usuario-model.php";
+	include "main-controller.php";
 	
-	if(valida_dados_login($_POST["login"],$_POST["senha"])){
-		header("Location: ../views/homeADM-view.php");
-	} else{
-		//mensagem alerta de erro e
-		header("Location: ../views/login-view.php") ;
+	$usuario = new Usuario;
 		
+	$usuario->login = $_POST['login']; 
+	$usuario->senha = $_POST['senha']; 
+	
+	$validacao = $usuario->login();
+	if($validacao != false){
+		$_SESSION['usuario_logado'] = $validacao;
+		header('Location: ../views/homeADM-view.php');
+	}else{
+		header('Location: ../views/login-view.php');
 	}
-		
 		
 ?>

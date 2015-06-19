@@ -4,8 +4,8 @@
 	<div id="mainOrcamento">
 		<h4> Solicite seu Orçamento</h4>
 		<p>Preencha os dados abaixo</p>
-		
-		<form action="../controllers/orcamentos-controller.php" method="POST">
+
+		<form action="http://localhost/web1-Yo/web/controllers/orcamentos-controller.php" method="POST" id="orcamentoForm">
 			<table class="form">
 				<tr>
 					<td>Nome Solicitante:</td>
@@ -66,7 +66,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td><input type="submit"/ value="Enviar"></td>
+					<td><input type="submit" id="enviarOrcamento" value="Enviar"></td>
 				</tr>
 			</form>
 	</div>		

@@ -2,7 +2,7 @@
 <?php include "../controllers/listagem-controller.php" ?>
 <?php include "header-view.php"; ?>
 
-	<div class="main-homeADM">
+<div class="main-homeADM">
 		
 		<?php
 			if(!isset($_SESSION['usuario_logado'])){
@@ -12,11 +12,11 @@
 			}else{ ?>
 				<H1>"Bem-Vindo, <?php echo $_SESSION['usuario_logado']; ?> <H1>"
 				
-				<div id="mainHomeADM">
+				<div id="mainOrcamentosADM">
 					<div id="sideBar">
-						<h1>Menu ADM</h1>
+						<p>Menu ADM</p>
 					</div>
-					<div id="listaOrcamentos">
+					<div id="inserirOrc">
 						<table id="lista">
 							<thead>
 								<tr><th>ID</th></tr>
@@ -27,17 +27,15 @@
 							</thead>
 							<tbody>
 								<?php 
-								foreach ($listagem as $item) {
-									echo "<tr>";
-									echo "<td>".$item['ID']."</td>";
-									echo "<td>".$item['nomeSol']."</td>";
-									echo "<td>".$item['empresa']."</td>";
-									echo "<td>".$item['dataServ']."</td>";
+									$item = $_GET["id"];
+									$listID = $orcamentos->itemRes($item);
 									
-									echo "<td><a href='orcamentosADM-view.php?id=".$item['ID']."'>Responder</a></td>";
 									
-									echo "</tr>";
-								}
+										echo "<tr>";
+										echo "<td>".$listID['ID']."</td></tr>";
+										
+									
+																	
 								?>
 						</tbody>
 						</table>

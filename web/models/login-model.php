@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+/*session_start();
 
 function valida_dados_login($login,$senha){
 	if($login == 'admin' && $senha=='admin')
@@ -32,5 +32,17 @@ function deslogar()
 	unset($_SESSION["login"]);
 }
 
+function entrar($login, $senha, $entrar){
+	if (isset($entrar)){ 
+		$verifica = mysql_query("SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'") or die("erro ao selecionar"); 
+		
+		if (mysql_num_rows($verifica)<=0){
+			return false;
+		}else{ 
+			return true; 
+			} 
+		} 
+}
+*/
 
 ?>

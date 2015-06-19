@@ -1,3 +1,8 @@
+<?php 
+	require_once ('../controllers/main-controller.php');
+	include '../models/usuario-model.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
