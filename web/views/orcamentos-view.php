@@ -2,7 +2,7 @@
 
 <div class="main-orcamento">
 	<div id="mainOrcamento">
-		<h4> Solicite seu Orçamento</h4>
+		<h3> Solicite seu Orçamento</h3>
 		<p>Preencha os dados abaixo</p>
 
 		<form action="http://localhost/web1-Yo/web/controllers/orcamentos-controller.php" method="POST" id="orcamentoForm">

@@ -10,7 +10,7 @@
 				header('Location: ../views/login-view.php');
 
 			}else{ ?>
-				<H1>"Bem-Vindo, <?php echo $_SESSION['usuario_logado']; ?> <H1>"
+				<h2>"Bem-Vindo, <?php echo $_SESSION['usuario_logado']; ?>" </h2>
 				
 				<div id="mainOrcamentosADM">
 					<div id="sideBar">

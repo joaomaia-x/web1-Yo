@@ -7,16 +7,16 @@
 			<div id="links">
 				<h4>Links</h4>
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li><a href="orcamentos-view.php">Orçamentos</a></li>
+					<li><a href="servicos-view.php">Serviços</a></li>
+					<li><a href="contato-view.php">Contato</a></li>
 				</ul>
 			</div>
 			<div ids="socialLinks">
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
 				</ul>
 			</div>
 	      </div>
