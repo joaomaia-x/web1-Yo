@@ -11,7 +11,7 @@
   $orcamento->dataServ = $_POST["dataServ"];
   $orcamento->coleta = $_POST["coleta"];
   $orcamento->entrega = $_POST["entrega"];
-   
+
   
   if($orcamento->save() == true){
   	//incluir alerta enviado
@@ -26,5 +26,5 @@
     return null;
   }
 
-
+  
 ?>

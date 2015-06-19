@@ -18,29 +18,86 @@
 					</div>
 					<div id="inserirOrc">
 						<table id="lista">
-							<thead>
-								<tr><th>ID</th></tr>
-								<tr><th>Nome Solicitante</th></tr>
-								<tr><th>Empresa</th></tr>
-								<tr><th>Data Serviço</th></tr>
-								<tr><th></th></tr>
-							</thead>
-							<tbody>
-								<?php 
-									$item = $_GET["id"];
-									$listID = $orcamentos->itemRes($item);
-									
-									
-										echo "<tr>";
-										echo "<td>".$listID['ID']."</td></tr>";
-										
-									
-																	
-								?>
-						</tbody>
-						</table>
-					</div>
-				</div>
+							<tbody>								
+							<table class="form">
+								<tr>
+									<td>Nome Solicitante:</td>
+									<td>
+										<?= $orcamentoAtual['nomeSol'] ?>
+									</td>
+								</tr>
+								<tr>
+									<td> Email:</td>
+									<td>
+										<?= $orcamentoAtual['email'] ?>
+									</td>
+								</tr>
+								<tr>
+									<td> Telefone:</td>
+									<td>
+										<?= $orcamentoAtual['telefone'] ?>
+									</td>
+								</tr>
+								<tr>
+									<td> Empresa:</td>
+									<td>
+										<?= $orcamentoAtual['empresa'] ?>
+									</td>
+								</tr>
+								<tr>
+									<td> Serviço:</td>
+									<td>					
+										<?= $orcamentoAtual['servico'] ?>
+									</td>
+								</tr>
+								<tr>
+									<td> Detalhes Adicionais:</td>
+									<td>
+										<?= $orcamentoAtual['detalhes'] ?>
+									</td>
+								</tr>
+								<tr>
+									<td> Data Serviço:</td>
+									<td>
+										<?= $orcamentoAtual['dataServ'] ?>
+									</td>
+								</tr>
+								<tr>
+									<td> Endereço Coleta:</td>
+									<td>
+										<?= $orcamentoAtual['coleta'] ?>
+									</td>
+								</tr>
+								<tr>
+									<td> Endereço Entrega:</td>
+									<td>
+										<?= $orcamentoAtual['entrega'] ?>
+									</td>
+								</tr>
+								</table>
+								<form action="http://localhost/web1-Yo/web/controllers/orcamentosADM-controller.php" method="POST" id="respostaForm">
+								<table>
+									<tr>
+									<td> Valor:</td>
+									<td>
+										<input type="text" id="valor" name="valor" value="<?= $orcamentoAtual['valor'] ?>" />
+									</td>
+									</tr>
+									<tr>
+									<td> comentarios:</td>
+									<td>
+										<input type="text" id="comADM" name="comADM" value="<?= $orcamentoAtual['comADM'] ?>"/>
+									</td>
+									<td>
+										<input type="hidden" id="ID" name="ID" value="<?= $orcamentoAtual['ID'] ?>"/>
+									</td>
+									</tr>
+								<tr>
+									<td><input type="submit" id="responderOrcamento" value="Enviar"></td>
+								</tr>									
+							</table>
+							</form>
+					
 		
 		<?php } ?>
 		

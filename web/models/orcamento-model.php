@@ -48,15 +48,14 @@ require_once ('connect-model.php');
 	}
 	
 	public function itemRes($itemID){
-		$query = "SELECT FROM orcamentos WHERE ID=".$itemID."";
+		$query = "SELECT * FROM orcamentos WHERE ID=".$itemID;
 		$conexao = new Connect;
 		$resultado = $conexao->query($query);
 		return $resultado; 
 	}
 	
 	function responder($itemID){
-		$query = "INSERT INTO orcamentos (valor, comADM)
-					VALUES ('".$this->valor."', '".$this->comADM."')
+		$query = "UPDATE orcamentos SET valor=".$this->valor.", comADM=".$this->comADM."
 					WHERE ID=".$itemID."";
 		$conexao = new Connect;
 		$conexao->query($query);
